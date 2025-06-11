@@ -10,7 +10,7 @@ st.title("Pregunta lo qye quieras, estoy aqui para ayudarte")
 #페이지 메인 텍스트 설정
 
 import os
-os.environ["OPENAI_API_KEY"] = st.secrests["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 def generate_response(input_text):
         llm = ChatOpenAI(temperature = 0, model_name = 'gpt-4') #우리가 만드는 모델 설정
